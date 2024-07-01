@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+header {
+    background-blend-mode: multiply;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    padding: 5px 0;
+    font-size: 1.2rem;
+}
+
+section ul li i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section ul li {
+        font-size: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 2s ease-in-out;
+}
